@@ -1,0 +1,22 @@
+//to override the access modifier we can do it with less restrictive access modifier
+//Override is possible only through Inheritance
+public class Child extends Parent{
+	
+	@Override
+	 protected void methodA() {
+		super.methodA();
+		System.out.println("Overridden A");
+	}
+	
+	@Override
+	public void methodB(){
+		super.methodB();
+		System.out.println("Ovreridden B");
+	}
+	
+	public static void main(String[] args) {
+		Child child=new Child();
+		child.methodA();
+		child.methodB();
+	}
+}

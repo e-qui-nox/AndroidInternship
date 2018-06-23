@@ -1,0 +1,49 @@
+
+public class Example {
+
+	
+	public static void methodA(String a,String b, MyInterface myInterface) {
+		
+		System.out.println(a+" "+b);
+	}
+	
+	public static void main(String[] args) {
+		
+		//Incorrect
+		//MyInterface myInterface = new MyInterface();
+		// since it has undefined methods
+		
+		// Correct
+
+		
+		//MyInterface myInterface = new MyInterface() {
+
+			//public void saySomething() {
+				//System.out.println("something !");
+				
+			//}
+
+			//public void sayHello() {
+				//System.out.println("hello !");
+				
+			//}
+			
+		//};
+		/* anonymous class{
+
+			public void saySomething() {
+				System.out.println("something !");
+				
+			}
+
+			public void sayHello() {
+				System.out.println("hello !");
+				
+			}
+			
+		}; */
+		//myInterface.saySomething();
+		//myInterface.sayHello();
+		
+	}
+}

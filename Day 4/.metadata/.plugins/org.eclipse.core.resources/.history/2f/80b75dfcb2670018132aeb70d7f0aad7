@@ -1,0 +1,13 @@
+//to override the access modifier we can do it with less restrictive access modifier
+public class Child extends Parent{
+	
+	@Override
+	 protected void sayGreetings() {
+		System.out.println("Overridden A");
+	}
+	
+	@Override
+	public void methodB(){
+		System.out.println("Ovreridden B");
+	}
+}

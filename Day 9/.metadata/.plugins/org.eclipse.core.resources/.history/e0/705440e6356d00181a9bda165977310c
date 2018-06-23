@@ -1,0 +1,12 @@
+
+public class Driver {
+	
+	public static void main(String[] args) {
+		//Lambda Expression
+		MyFunctionalInterface obj = (number) -> {
+			System.out.println(number);
+		};
+		
+		obj.methodA(1000);
+	}
+}

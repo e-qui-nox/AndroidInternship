@@ -1,0 +1,16 @@
+
+public class SuperDemo extends SuperExample{
+
+	public SuperDemo() {
+		System.out.println("Child constructor");
+	}
+	
+	@Override
+	public void printSomething() {
+		System.out.println("Method in Child class");
+	}
+	
+	public static void main(String[] args) {
+		SuperDemo superDemo = new SuperDemo();
+	}
+}

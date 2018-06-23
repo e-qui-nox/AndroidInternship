@@ -1,0 +1,46 @@
+/*try {
+	Statement which can throw an exception
+}catch(ExceptionName exceptionVariable){
+	Catch | Handle the exception here
+}finally {
+	Will be executed irrespective of whether an exception is thrown or not
+}
+1.checked | compiler-time exceptions
+2.unchecked | run-time exceptions
+
+A->throw
+B->throws   //keywords
+*/
+
+import java.io.*;
+public class MyReader {
+	
+	//Method 1
+	public void readFromAFile(String fileName) {
+		FileReader fileReader=null;
+		try {
+			fileReader=new FileReader(fileName);
+			int c; //To store data from file
+			while((c=fileReader.read())!=-1) {
+				System.out.println(c);;
+			}
+		}catch(FileNotFoundException f) {
+			System.err.println(f);
+		}catch(IOException i) {
+			System.err.println(i);
+		}finally {
+			try {
+				fileReader.close();
+			} catch (IOException e) {
+				System.err.println(e);
+			}
+		}
+		
+	}
+	
+	//Method 2
+	public void writeToAFile(String fileName, String input) throws IOException{
+		FileWriter fileWriter = new FileWriter("filename"); //compile time exception
+		
+	}
+}

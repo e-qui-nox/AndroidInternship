@@ -1,0 +1,46 @@
+http://api.openweathermap.org/data/2.5/weather?q=Kayankulam&appId=6512f0620f75af000a36470f954e4739 in Kelvin
+http://api.openweathermap.org/data/2.5/weather?q=Kayankulam&appId=6512f0620f75af000a36470f954e4739&units=metric in Celcius
+6512f0620f75af000a36470f954e4739 key
+ASyncTask like Threads
+the 3 generic classes it needs are <Params,Progress,Result>
+3 functions
+onPreExecute()
+doInBackground(Params[] params)  thread runs here and accepts the parameter
+Result onPostExecute() does whatever is supposed to be done after the thread is run
+
+Result doInBackground(Params[] params){
+	returns newResult();
+}
+Progress is set to Void(wrapper) which means it showthe progress of our app
+
+URL vs URI
+https://www.google.com - URL   the protocol is mentioned
+google.com - URI
+
+q=Kayankulam query parameter
+units=metric query parameter
+appId=6512f0620f75af000a36470f954e4739 query parameter
+
+android:text= will set the text andwhen we run the app we will be able to see the text
+but if we ue the tool:text= we will not be able to see the text
+
+text 
+|
+ -------  --------
+-City	  hint    -
+ -------  --------
+city - we can backspace it four times 
+hint will be a faded msg. it can be over written
+
+		---------------------------
+setTitle	CitySearch
+setMessage	Please enter the city to
+		be searched
+		--------------------------
+Set view->
+		--------------------------
+
+			------------------
+			-Cancel	-   OK	 -
+		--------------------------
+			 -ve	   +ve

@@ -1,0 +1,31 @@
+import java.io.*;
+public class MyReader {
+	
+	//Method 1
+	public void readFromAFile(String fileName) {
+		FileReader fileReader=null;
+		try {
+			fileReader=new FileReader(fileName);
+			int c; //To store data from file
+			while((c=fileReader.read())!=-1) {
+				System.out.println(c);;
+			}
+		}catch(FileNotFoundException f) {
+			System.err.println(f);
+		}catch(IOException i) {
+			System.err.println(i);
+		}finally {
+			try {
+				fileReader.close();
+			} catch (IOException e) {
+				System.err.println(e);
+			}
+		}
+		
+	}
+	
+	//Method 2
+	public void writeToAFile(String fileName, String input) {
+		
+	}
+}

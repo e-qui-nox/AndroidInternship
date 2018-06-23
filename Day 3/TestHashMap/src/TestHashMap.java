@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class TestHashMap {
+	public static void main(String[] args) {
+		HashMap<Integer,String> hm=new HashMap<>();
+		
+		
+		hm.put(1,"Yamuna");
+		hm.put(2, "Ganga");
+		hm.put(3, "Amrita");
+		
+		Iterator <Map.Entry<Integer, String>>it=hm.entrySet().iterator(); //Iterator is generic hence we require <Map.Entry<Integer, String>>
+		while(it.hasNext()) {
+			Map.Entry<Integer, String> pair =it.next();
+			System.out.println(pair.getKey()+" = "+pair.getValue());
+		}
+		
+		String name=hm.get(4);
+		System.out.println(name);
+	}
+}

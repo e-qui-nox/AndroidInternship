@@ -1,0 +1,28 @@
+
+public class MyFavourites implements Favourites{
+
+	public void favouriteFruit() {
+
+		System.out.println("WaterMelon");
+		
+	}
+
+
+	public void favouriteIceCream() {
+		
+		System.out.println("BlackCurrent");
+	}
+
+	
+	public void favouriteMovie() {
+		System.out.println("HarryPotter");
+		
+	}
+
+	@Override
+	public void favouriteSubject() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+
+public class Driver {
+	
+	public static String main(String[] args) {
+		//Lambda Expression
+		MyFunctionalInterface obj = (a,b) -> {
+			return a+b;
+		};
+		//MyFunctionalInterface obj = (a,b) -> System.out.println(a+b); {} is not required if we are returning anything 
+		
+		
+		System.out.println(obj.methodA("Yamuna", "K"));
+	}
+}

@@ -1,0 +1,16 @@
+
+public class Driver {
+	public static void main(String[] args) {
+
+	//String a;
+	Animal a;
+	a=new Animal();
+	a.animalSays();
+	
+	a=new Tiger();
+	a.animalSays();
+	
+	a=new TigerCub();
+	a.animalSays();
+	}
+}

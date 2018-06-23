@@ -1,0 +1,20 @@
+
+public class SuperDemo extends SuperExample{
+
+	public SuperDemo() {
+		super();//by default it will be called but will not initialize the variables if not given
+		System.out.println("Child constructor");
+	}
+	
+	@Override
+	public void printSomething() {
+		System.out.println("Method in Child class");
+		//super.printSomething();//to call the exact method that was defined in the superClass 
+	}
+	
+	public static void main(String[] args) {
+		SuperDemo superDemo = new SuperDemo();
+		superDemo.printSomething();
+		
+	}
+}

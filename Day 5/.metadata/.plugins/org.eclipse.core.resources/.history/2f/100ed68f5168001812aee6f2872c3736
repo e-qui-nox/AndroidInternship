@@ -1,0 +1,26 @@
+
+public class Example {
+	public static void main(String[] args) {
+		
+		//Incorrect
+		//MyInterface myInterface = new MyInterface();
+		// since it has undefined methods
+		
+		// Correct
+		MyInterface myInterface = new MyInterface() {
+
+			@Override
+			public void saySomething() {
+				System.out.println("something !");
+				
+			}
+
+			@Override
+			public void sayHello() {
+				System.out.println("hello !");
+				
+			}
+			
+		};
+	}
+}

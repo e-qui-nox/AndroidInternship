@@ -1,0 +1,16 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Driver {
+	
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader bfr = new BufferedReader(new InputStreamReader(System.in)); //to read input from user
+		int fuelCapacity = Integer.parseInt(bfr.readLine());
+		int distance = Integer.parseInt(bfr.readLine());
+		String carName = bfr.readLine();
+		Car car = new Car(fuelCapacity, carName);
+		car.drive(distance);
+	}
+}

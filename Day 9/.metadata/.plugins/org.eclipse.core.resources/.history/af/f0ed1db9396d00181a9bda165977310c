@@ -1,0 +1,5 @@
+
+public interface MyFunctionalInterface {
+
+		String methodA(String a,String b);
+}

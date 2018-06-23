@@ -1,0 +1,36 @@
+
+public class MyFavourites implements Favourites{
+
+	public void favouriteFruit() {
+
+		System.out.println("WaterMelon");
+		
+	}
+
+
+	public void favouriteIceCream() {
+		
+		System.out.println("BlackCurrent");
+	}
+
+	
+	public void favouriteMovie() {
+		System.out.println("HarryPotter");
+		
+	}
+
+	
+	public void favouriteSubject() {
+		System.out.println("All Subjects");
+		
+	}
+	
+	public static void main(String[] args) {
+		MyFavourites favourites = new MyFavourites();
+		favourites.favouriteFruit();
+		favourites.favouriteIceCream();
+		favourites.favouriteMovie();
+		favourites.favouriteSubject();
+	}
+	
+}

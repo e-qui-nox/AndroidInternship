@@ -1,0 +1,7 @@
+
+public class Animal {
+	
+	public void animalSays() {
+		System.out.println("Animal !!!");
+	}
+}

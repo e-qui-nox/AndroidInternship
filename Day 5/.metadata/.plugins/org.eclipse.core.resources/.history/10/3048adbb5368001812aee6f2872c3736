@@ -1,0 +1,35 @@
+
+public class Example {
+
+	
+	public static void methodA(String name, MyInterface blah) {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		//Incorrect
+		//MyInterface myInterface = new MyInterface();
+		// since it has undefined methods
+		
+		// Correct
+
+		
+		MyInterface myInterface = new MyInterface() {
+
+			public void saySomething() {
+				System.out.println("something !");
+				
+			}
+
+			public void sayHello() {
+				System.out.println("hello !");
+				
+			}
+			
+		};
+		myInterface.saySomething();
+		myInterface.sayHello();
+		
+	}
+}

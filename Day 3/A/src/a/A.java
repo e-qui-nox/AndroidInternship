@@ -1,0 +1,21 @@
+/*Types of access modifiers
+
+1.private - cannot be accessed outside the class,(*)cannot define class as private,cannot create objects,but nested class can be private
+2.default - if we don't specify the access modifier - same folder same package can be accessed(inside the folder),class cannot be protected
+3.protected - less restricted than default access outside the package well, particular class should inherit it (even outside folder)
+4.public  - least restricted can be accessed from anywhere */ 
+package a;
+   
+	public class A {
+	//Default variables
+	public int number;
+	public String someString;
+
+	public A() {
+		//cannot create objects outside of class
+	}
+
+	public void someMethod() {
+		System.out.println("something");
+	}
+}

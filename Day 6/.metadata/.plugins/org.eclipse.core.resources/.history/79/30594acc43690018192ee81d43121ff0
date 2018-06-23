@@ -1,0 +1,5 @@
+//can have only one undefined method(abstract method)
+//if nothing in front of the method then it is by default public static
+public class FunctionalInterface {
+
+}

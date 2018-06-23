@@ -1,0 +1,13 @@
+//to override the access modifier we can do it with less restrictive access modifier
+public class Parent {
+	
+	//default access modifier
+	void sayGreetings() {
+		System.out.println("Hello");
+	}
+	
+	//protected access modifier
+	protected void methodB(){
+		System.out.println("method");
+	}
+}
